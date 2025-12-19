@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Did Bob experience hallucinations, such as seeing objects that don't exist or hearing non-existent sounds, on November 13, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+    {
+        "role": "user",
+        "content": "Did Bob exhibit confusion in language and logic on November 13, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    }
+]

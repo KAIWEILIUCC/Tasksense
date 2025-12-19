@@ -1,0 +1,6 @@
+{
+    "1-1": "lambda x: x > 0.2",
+    "1-2": "lambda x: x < 80",
+    "2-1": "lambda x: x > 0.2",
+    "2-2": "lambda x: x < 80"
+}

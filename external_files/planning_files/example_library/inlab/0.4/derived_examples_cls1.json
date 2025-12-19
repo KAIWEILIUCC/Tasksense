@@ -1,0 +1,42 @@
+[
+    {
+        "role": "user",
+        "content": "On the morning of November 23, 2023, did Bob have an incident where he lost his balance and fell?"
+    },
+    {
+        "role": "assistant",
+        "content": "[{\"tool_name\": \"query-video-data-rgb\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": [[20231123, 6, 9]]}}, {\"tool_name\": \"object-detection-rgb\", \"id\": 1, \"dep\": [0], \"args\": {\"rgb_video\": \"<GENERATED>-0\"}}, {\"tool_name\": \"human-activity-classification-rgb\", \"id\": 2, \"dep\": [1], \"args\": {\"rgb_video\": \"<GENERATED>-1\"}}]"
+    },
+    {
+        "role": "user",
+        "content": "Did Bob display any belligerent or antagonistic conduct on November 23, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[{\"tool_name\": \"query-video-data-rgb\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": [[20231123, 0, 24]]}}, {\"tool_name\": \"object-detection-rgb\", \"id\": 1, \"dep\": [0], \"args\": {\"rgb_video\": \"<GENERATED>-0\"}}, {\"tool_name\": \"human-activity-classification-rgb\", \"id\": 2, \"dep\": [1], \"args\": {\"rgb_video\": \"<GENERATED>-1\"}}]"
+    },
+    {
+        "role": "user",
+        "content": "Were there any instances on November 13th, 2023, where Bob participated in the ancient Chinese pastime of Go with his acquaintances, or did he focus on perfecting the craft of brewing tea independently?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (The label setting of human-activity-classification does not contain the activity type labels for the specified activities: ['Boxing', 'Pushing', 'Patting on the shoulder', 'Shaking hands', 'Face-to-face conversation', 'Standing still', 'Waving arms', 'Playing with phone using both hands', 'Rubbing hands', 'Touching head', 'Coughing', 'Jumping with both feet', 'Stomping feet', 'Walking', 'Squatting', 'Bending over', 'Throwing things', 'Picking up things', 'Kicking the cabinet', 'Searching for things in the cabinet', 'Angrily hitting the cabinet', 'Sitting still', 'Sitting and making a phone call', 'Sitting down', 'Standing up', 'Raising hand to check time/putting down', 'Stretching', 'Taking off/putting on a mask', 'Lying on a mat', 'Falling down/getting up'])"
+    },
+    {
+        "role": "user",
+        "content": "What was the exact time when Bob drifted off into the realm of dreams on November 13, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with sleeping status monitoring functionality.)"
+    },
+    {
+        "role": "user",
+        "content": "Did Bob manage to have a proper meal and a bath on November 12, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (The label setting of human-activity-classification does not contain the activity type labels for the specified activities: ['Boxing', 'Pushing', 'Patting on the shoulder', 'Shaking hands', 'Face-to-face conversation', 'Standing still', 'Waving arms', 'Playing with phone using both hands', 'Rubbing hands', 'Touching head', 'Coughing', 'Jumping with both feet', 'Stomping feet', 'Walking', 'Squatting', 'Bending over', 'Throwing things', 'Picking up things', 'Kicking the cabinet', 'Searching for things in the cabinet', 'Angrily hitting the cabinet', 'Sitting still', 'Sitting and making a phone call', 'Sitting down', 'Standing up', 'Raising hand to check time/putting down', 'Stretching', 'Taking off/putting on a mask', 'Lying on a mat', 'Falling down/getting up'])"
+    }
+]

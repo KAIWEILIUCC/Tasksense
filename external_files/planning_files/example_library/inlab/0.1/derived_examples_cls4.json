@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "On November 13th, 2023, were there any audible indications of an individual's respiratory passages being partially blocked during their slumber, resulting in a distinctive snoring noise?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool for audio modality.)"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "Was there any snoring sound caused by obstructed breathing during sleep on November 13th, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool for audio modality.)"
+    }
+]

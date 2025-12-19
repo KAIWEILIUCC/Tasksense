@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "On the morning of November 23, 2023, did Bob have an incident where he lost his balance and fell?"
+    },
+    {
+        "role": "assistant",
+        "content": "[{\"tool_name\": \"query-video-data-rgb\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": [[20231123, 6, 9]]}}, {\"tool_name\": \"object-detection-rgb\", \"id\": 1, \"dep\": [0], \"args\": {\"rgb_video\": \"<GENERATED>-0\"}}, {\"tool_name\": \"human-activity-classification-rgb\", \"id\": 2, \"dep\": [1], \"args\": {\"rgb_video\": \"<GENERATED>-1\"}}]"
+    },
+    {
+        "role": "user",
+        "content": "Did Bob display any belligerent or antagonistic conduct on November 23, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[{\"tool_name\": \"query-video-data-rgb\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": [[20231123, 0, 24]]}}, {\"tool_name\": \"object-detection-rgb\", \"id\": 1, \"dep\": [0], \"args\": {\"rgb_video\": \"<GENERATED>-0\"}}, {\"tool_name\": \"human-activity-classification-rgb\", \"id\": 2, \"dep\": [1], \"args\": {\"rgb_video\": \"<GENERATED>-1\"}}]"
+    }
+]

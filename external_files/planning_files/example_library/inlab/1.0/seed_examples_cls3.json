@@ -1,0 +1,64 @@
+[
+    {
+        "role": "user",
+        "content": "What were the characteristics of Bob's facial expressions on November 13th, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "Did Bob experience emotional outbursts on November 13th, 2023"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "Did Bob experience significant mood swings from 5:00pm to 7:00pm on November 13th, 2023? Were his mood swings consistent with his words and actions?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "Was Bob more prone to anger on November 13th, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "Did Bob display any signs of putting on a brave face or forcing a smile on November 13th, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "Did Bob's voice tremble due to emotional agitation on November 13th, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "Were Bob's facial expressions relatively stiff or rigid on November 13th, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    }
+]

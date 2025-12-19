@@ -1,0 +1,11 @@
+{
+    "initial-input (tool calling id < 0)": -1,
+    "object-detection-rgb": 0,
+    "human-activity-classification-rgb": 1,
+    "object-detection-depth": 2,
+    "human-activity-classification-depth": 3,
+    "query-video-data-rgb": 4,
+    "query-video-data-depth": 5,
+    "take-picture": 6,
+    "send-notification": 7
+}

@@ -1,0 +1,90 @@
+{
+    "model_tool": [
+        {
+            "tool_name": "object-detection-rgb",
+            "description": "This tool will detect objects in the input video and crop the detected objects into seperate videos.",
+            "input": {
+                "rgb_video": "The input video to be processed."
+            },
+            "output": {
+                "label": "A list of list. Each list contains all the labels of the detected objects in the corresponding video. Possible labels: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'N/A', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'N/A', 'backpack', 'umbrella', 'N/A', 'N/A', 'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle', 'N/A', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'N/A', 'dining table', 'N/A', 'N/A', 'toilet', 'N/A', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'N/A', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush']",
+                "rgb_video": "The cropped videos of the detected objects."
+            },
+            "modality": "rgb_video"
+        },
+        {
+            "tool_name": "human-activity-classification-rgb",
+            "description": "This tool will recognize the human activity in each input video.",
+            "input": {
+                "rgb_video": "The input videos of person to be processed."
+            },
+            "output": {
+                "label": "The list of label of the recognized human activity in each video. Possible labels: ['Boxing', 'Pushing', 'Patting on the shoulder', 'Shaking hands', 'Face-to-face conversation', 'Standing still', 'Waving arms', 'Playing with phone using both hands', 'Rubbing hands', 'Touching head', 'Coughing', 'Jumping with both feet', 'Stomping feet', 'Walking', 'Squatting', 'Bending over', 'Throwing things', 'Picking up things', 'Kicking the cabinet', 'Searching for things in the cabinet', 'Angrily hitting the cabinet', 'Sitting still', 'Sitting and making a phone call', 'Sitting down', 'Standing up', 'Raising hand to check time/putting down', 'Stretching', 'Taking off/putting on a mask', 'Lying on a mat', 'Falling down/getting up']"
+            },
+            "modality": "rgb_video"
+        },
+        {
+            "tool_name": "object-detection-depth",
+            "description": "This tool will detect objects in the input depth video and crop the detected objects into seperate videos.",
+            "input": {
+                "depth_video": "The input depth video to be processed."
+            },
+            "output": {
+                "label": "A list of list. Each list contains all the labels of the detected objects in the corresponding video. Possible labels: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'N/A', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'N/A', 'backpack', 'umbrella', 'N/A', 'N/A', 'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle', 'N/A', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'N/A', 'dining table', 'N/A', 'N/A', 'toilet', 'N/A', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'N/A', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush']",
+                "depth_video": "The cropped videos of the detected objects."
+            },
+            "modality": "depth_video"
+        },
+        {
+            "tool_name": "human-activity-classification-depth",
+            "description": "This tool will recognize the human activity in each input depth video.",
+            "input": {
+                "depth_video": "The input depth videos of person to be processed."
+            },
+            "output": {
+                "label": "The list of label of the recognized human activity in each depth video. Possible labels: ['Boxing', 'Pushing', 'Patting on the shoulder', 'Shaking hands', 'Face-to-face conversation', 'Standing still', 'Waving arms', 'Playing with phone using both hands', 'Rubbing hands', 'Touching head', 'Coughing', 'Jumping with both feet', 'Stomping feet', 'Walking', 'Squatting', 'Bending over', 'Throwing things', 'Picking up things', 'Kicking the cabinet', 'Searching for things in the cabinet', 'Angrily hitting the cabinet', 'Sitting still', 'Sitting and making a phone call', 'Sitting down', 'Standing up', 'Raising hand to check time/putting down', 'Stretching', 'Taking off/putting on a mask', 'Lying on a mat', 'Falling down/getting up']"
+            },
+            "modality": "depth_video"
+        }
+    ],
+    "db_tool": [
+        {
+            "tool_name": "query-video-data-rgb",
+            "description": "The query-video-data operation is used to retrieve or fetch RGB video data from a database based on inputted time range.",
+            "input": {
+                "text": "The time range of the video data to be retrieved."
+            },
+            "output": {
+                "rgb_video": "The retrieved video data."
+            },
+            "modality": "rgb_video"
+        },
+        {
+            "tool_name": "query-video-data-depth",
+            "description": "The query-video-data-depth operation is used to retrieve or fetch depth video data from a database based on inputted time range.",
+            "input": {
+                "text": "The time range of the depth video data to be retrieved."
+            },
+            "output": {
+                "depth_video": "The retrieved depth video data."
+            },
+            "modality": "depth_video"
+        }
+    ],
+    "sensor_tool": [
+        {
+            "tool_name": "take-picture",
+            "description": "Use the camera to take a specified number of pictures and store them in the database. "
+        },
+        {
+            "tool_name": "send-notification",
+            "description": "Send a notification to the user's mobile phone.",
+            "input": {
+                "text": "The content of the notification."
+            },
+            "output": {
+                "status": "The result of sending the notification."
+            }
+        }
+    ]
+}

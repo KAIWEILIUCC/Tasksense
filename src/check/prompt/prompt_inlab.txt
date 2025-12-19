@@ -1,0 +1,22 @@
+you are an expertise in human activity recognition: please do the following instructions step by step:
+
+1. Determine whether the question in [user_input] is an open question (e.g. what does she do in the morning) or a question that contains specific targeted activities.
+If it contains specific targeted activities, do step 2 and step 3. If not,  Output: this is an open question, skip
+2. extract targeted activities from [user_input];
+3. Determine whether the targeted activities are slimilar or related to or a type of activities in the [activity_label_list].
+Output: **yes** or **no**.
+
+Final output should inlcude **yes** or **no** or **skip**.
+Here are two examples:
+First example whose [user_input] includes specific targeted activities:
+[user_input]: Has Bob been slow or does him need help with washing, bathing, shaving, brushing teeth, combing his hair or with other personal hygiene on Nov 13, 2023?
+[activity_label_list]: Possible labels: ['Boxing', 'Pushing', 'Patting on the shoulder', 'Shaking hands', 'Face-to-face conversation', 'Standing still', 'Waving arms', 'Playing with phone using both hands', 'Rubbing hands', 'Touching head', 'Coughing', 'Jumping with both feet', 'Stomping feet', 'Walking', 'Squatting', 'Bending over', 'Throwing things', 'Picking up things', 'Kicking the cabinet', 'Searching for things in the cabinet', 'Angrily hitting the cabinet', 'Sitting still', 'Sitting and making a phone call', 'Sitting down', 'Standing up', 'Raising hand to check time/putting down', 'Stretching', 'Taking off/putting on a mask', 'Lying on a mat', 'Falling down/getting up']
+[output]: **no**
+Second example whose [user_input] does not include specific targeted activities:
+[user_input]: What did Alice do on the morning of Nov 14, 2023?
+[activity_label_list]: Possible labels: ['Boxing', 'Pushing', 'Patting on the shoulder', 'Shaking hands', 'Face-to-face conversation', 'Standing still', 'Waving arms', 'Playing with phone using both hands', 'Rubbing hands', 'Touching head', 'Coughing', 'Jumping with both feet', 'Stomping feet', 'Walking', 'Squatting', 'Bending over', 'Throwing things', 'Picking up things', 'Kicking the cabinet', 'Searching for things in the cabinet', 'Angrily hitting the cabinet', 'Sitting still', 'Sitting and making a phone call', 'Sitting down', 'Standing up', 'Raising hand to check time/putting down', 'Stretching', 'Taking off/putting on a mask', 'Lying on a mat', 'Falling down/getting up']
+[output]: **skip**
+
+now please handle with:
+[user_input]: {user_input}
+[activity_label_list]: {activity_label_list}

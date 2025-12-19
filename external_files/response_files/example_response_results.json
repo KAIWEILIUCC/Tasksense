@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "{{input}}"
+    },
+    {
+        "role": "assistant",
+        "content": "Before give you a response, I want to introduce the execution results: {{results}}. The results are incomplete for some time periods due to the low data quality: {{disabled_time_range}}, if it is empty, you can ignore it. Do you have any demands regarding my response?"
+    }
+]

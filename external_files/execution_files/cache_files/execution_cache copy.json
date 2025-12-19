@@ -1,0 +1,408 @@
+{
+    "object-detection-rgb": {
+        "./evaluation/sensor_database/inlab/rgb/20231116/01.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_1_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_2_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_3_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_4_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_5_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_6_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_7_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_8_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_9_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_10_person.avi"
+            ],
+            "label": [
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/02.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_02_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/03.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_03_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/04.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_04_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/05.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_05_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/06.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_1_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_2_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_3_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_4_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_5_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_6_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_7_person.avi"
+            ],
+            "label": [
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person",
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/07.mp4": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_07_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/08.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_08_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/09.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_09_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/10.mp4": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_10_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/11.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_11_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/12.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_12_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/13.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_13_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/14.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_14_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/15.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_15_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/18.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_18_object_1_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_18_object_2_person.avi"
+            ],
+            "label": [
+                "person",
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/rgb/20231116/20.avi": {
+            "rgb_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_20_object_1_person.avi",
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_20_object_2_person.avi"
+            ],
+            "label": [
+                "person",
+                "person"
+            ]
+        }
+    },
+    "human-activity-classification-rgb": {
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_1_person.avi": {
+            "label": [
+                "pat on shoulder"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_3_person.avi": {
+            "label": [
+                "falling down/getting up"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_4_person.avi": {
+            "label": [
+                "lying on a mat"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_6_person.avi": {
+            "label": [
+                "falling down/getting up"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_8_person.avi": {
+            "label": [
+                "falling down/getting up"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_01_object_10_person.avi": {
+            "label": [
+                "falling down/getting up"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_02_object_1_person.avi": {
+            "label": [
+                "throwing things"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_03_object_1_person.avi": {
+            "label": [
+                "coughing"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_04_object_1_person.avi": {
+            "label": [
+                "rubbing hands"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_05_object_1_person.avi": {
+            "label": [
+                "stomping feet"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_1_person.avi": {
+            "label": [
+                "push"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_2_person.avi": {
+            "label": [
+                "walking"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_3_person.avi": {
+            "label": [
+                "walking"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_4_person.avi": {
+            "label": [
+                "face-to-face conversation"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_5_person.avi": {
+            "label": [
+                "push"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_6_person.avi": {
+            "label": [
+                "push"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_06_object_7_person.avi": {
+            "label": [
+                "walking"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_07_object_1_person.avi": {
+            "label": [
+                "sitting down"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_08_object_1_person.avi": {
+            "label": [
+                "playing with phone using both hands"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_09_object_1_person.avi": {
+            "label": [
+                "squatting down"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_10_object_1_person.avi": {
+            "label": [
+                "sitting down"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_11_object_1_person.avi": {
+            "label": [
+                "kicking cabinet"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_12_object_1_person.avi": {
+            "label": [
+                "bending over"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_13_object_1_person.avi": {
+            "label": [
+                "sitting and making a phone call"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_14_object_1_person.avi": {
+            "label": [
+                "falling down/getting up"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_15_object_1_person.avi": {
+            "label": [
+                "coughing"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_18_object_1_person.avi": {
+            "label": [
+                "handshake"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_18_object_2_person.avi": {
+            "label": [
+                "looking for something in the cabinet"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_20_object_1_person.avi": {
+            "label": [
+                "walking"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_rgb/20231116_20_object_2_person.avi": {
+            "label": [
+                "boxing"
+            ]
+        }
+    },
+    "object-detection-depth": {
+        "./evaluation/sensor_database/inlab/dep/20231116/00.avi": {
+            "depth_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_00_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/dep/20231116/01.avi": {
+            "depth_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_01_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/dep/20231116/17.avi": {
+            "depth_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_17_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/dep/20231116/19.avi": {
+            "depth_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_19_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/dep/20231116/21.avi": {
+            "depth_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_21_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        },
+        "./evaluation/sensor_database/inlab/dep/20231116/22.avi": {
+            "depth_video": [
+                "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_22_object_1_person.avi"
+            ],
+            "label": [
+                "person"
+            ]
+        }
+    },
+    "human-activity-classification-depth": {
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_00_object_1_person.avi": {
+            "label": [
+                "picking up things"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_01_object_1_person.avi": {
+            "label": [
+                "lying on a mat"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_17_object_1_person.avi": {
+            "label": [
+                "stomping feet"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_19_object_1_person.avi": {
+            "label": [
+                "touching head"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_21_object_1_person.avi": {
+            "label": [
+                "falling down/getting up"
+            ]
+        },
+        "./external_files/execution_files/intermediate_results/inlab/output_from_object_detection_depth/20231116_22_object_1_person.avi": {
+            "label": [
+                "squatting down"
+            ]
+        }
+    }
+}

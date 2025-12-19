@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Did Bob fall on the morning of Nov 23, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[{\"tool_name\": \"query-video-data-rgb\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": [[20231123, 6, 9]]}}, {\"tool_name\": \"object-detection-rgb\", \"id\": 1, \"dep\": [0], \"args\": {\"rgb_video\": \"<GENERATED>-0\"}}, {\"tool_name\": \"human-activity-classification-rgb\", \"id\": 2, \"dep\": [1], \"args\": {\"rgb_video\": \"<GENERATED>-1\"}}]"
+    },
+    {
+        "role": "user",
+        "content": "Did Bob have aggressive behaviour on the afternoon of Nov 23, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[{\"tool_name\": \"query-video-data-rgb\", \"id\": 0, \"dep\": [-1], \"args\": {\"text\": [[20231123, 14, 18]]}}, {\"tool_name\": \"object-detection-rgb\", \"id\": 1, \"dep\": [0], \"args\": {\"rgb_video\": \"<GENERATED>-0\"}}, {\"tool_name\": \"human-activity-classification-rgb\", \"id\": 2, \"dep\": [1], \"args\": {\"rgb_video\": \"<GENERATED>-1\"}}]"
+    },
+    {
+        "role": "user",
+        "content": "When did Bob fall asleep on November 13, 2023?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with sleeping status monitoring functionality.)"
+    }
+]

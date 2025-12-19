@@ -1,0 +1,140 @@
+api_settings:
+  
+  llm_name: deepseek-v3
+  temperature: 0
+
+  azure:
+    api_key: #
+    api_version: #
+    azure_endpoint: #
+
+  volcengine:
+    temperature: 0.5
+    api_key: #
+    model: #
+  
+  poe:
+    api_key: #
+  
+  bedrock:
+    api_key: #
+    region_name: #
+
+  # cohere api is used for text embedding 
+  cohere:
+    api_key: #
+
+dataset_name: inlab
+
+checker_settings:
+  prompt_pth: 
+    inlab: './src/check/prompt/prompt_inlab.txt'
+  activity_label_pth: 
+    inlab: './src/check/activity_label_list/inlab_activity.txt'
+
+planning_settings:
+  # system_prompt describes the basic concepts and objectives of the planning stage, including the VOCABULARY SET and GRAMMAR RULES
+  system_prompt: >-
+    #1 Tool Calling Planning Stage: The AI assistant can parse user input to several tool callings: [{"tool_name": name of the called tool, "id": tool_calling_id, "dep": dependency_tool_calling_id, "args": {"text": text list or <GENERATED>-dep_id, "rgb_video/depth_video": RGB/Depth video_url list or <GENERATED>-dep_id, "audio": audio_url list or <GENERATED>-dep_id}}]. The special tag "<GENERATED>-dep_id" refer to the one generated text/rgb_video/audio/depth_video in the dependent tool calling (Please consider whether the dependency tool calling generates resources of this type.) and "dep_id" must be in "dep" list. The "dep" field denotes the ids of the previous prerequisite tool callings which generate a new resource that the current tool calling relies on. The "args" field must in ["text", "rgb_video", "audio", "depth_video"], nothing else. The tool calling MUST be selected from the tool list. The tool list contains the name and description of each tool. Here is the full tool list: {{vocabulary_set}}. Please be aware that the interdependencies among the tool calling in the plan you generated should adhere to the predefined regulations: {{grammar_rules}}. Think step by step about all the tool callings needed to resolve the user's request. Pay attention to the dependencies and order among tool callings. If the user input can't be parsed, you need to reply empty JSON []. (Note:tool callings using depth video modality perform better when when the light condition is bad, e.g. 0:00am to 6:00am ([xxxxxx, 0, 5]) and 6:00pm to 12:00pm ([xxxxxx, 18, 23]). A tool for a specific modality can not be used on another modality.)
+  # user_prompt requires the AI assistant to generate a plan based on the user input
+  user_prompt: >-
+    Now I input { {{user_input}} }. Pay attention to the input and output types of tool callings and the dependencies between tool callings. If the user input can't be parsed, you need to reply empty JSON [] (without explanation in the bracket as before, like "(There is no tool with such functionality.)"). (Note:tasks using depth video modality perform better when when the light condition is bad, e.g. 0:00am to 6:00am ([xxxxxx, 0, 5]) and 6:00pm to 12:00pm ([xxxxxx, 18, 23]). A task for a specific modality can not be used on another modality.)
+
+  examples:
+    example_library_path: ./external_files/planning_files/example_library/
+    number_of_selected_seed_examples: 10
+    number_of_example_categories: 4
+    scale_of_seed_examples: 1.0 # 1.0, 0.8, 0.6
+    number_of_selected_rag_examples: 20 # 20, 16, 12, 8, 4，0
+
+  tool_files_path: ./external_files/planning_files/tool_files/
+
+execution_settings:
+  # whether to use dynamic plan adaptation
+  use_dynamic_plan_adaptation: True
+  measure_flops: False
+
+  sensor_database_path:
+    inlab:
+      rgb: ./evaluation/sensor_database/inlab/rgb/
+      dep: ./evaluation/sensor_database/inlab/dep/
+    
+  # The path to save the intermediate output of the tools
+  intermediate_output_path: 
+      inlab: ./external_files/execution_files/intermediate_results/inlab/
+  
+  
+  # The flag to determine whether to 
+  # use the cache during the planning execution
+  use_cache: True
+  # The path to tool execution cache
+  execution_cache_path: ./external_files/execution_files/cache_files/execution_cache.json
+  # The path to embedding cache
+  embedding_cache_path: ./external_files/execution_files/cache_files/embedding_cache.json
+  # The path to dynamic execution metrics assessment
+  assessment_cache_path: ./external_files/execution_files/cache_files/assessment_cache.json
+  # used modalities
+  modalities:
+    inlab:
+      - text
+      - rgb_video
+      - depth_video
+      - audio
+    
+  # the device to run the tools
+  device: cuda:0
+
+  # mapping from tool name to saving path
+  # it need to be concnnated with intermediate_output_path
+  tool_name_saving_folder_map:
+    inlab:
+      object-detection-rgb: output_from_object_detection_rgb
+      object-detection-depth: output_from_object_detection_depth
+
+  # paths of model checkpoints
+  model_checkpoint_paths:
+    inlab:
+      object_detection_depth: ./external_files/execution_files/model_checkpoints/inlab/best_obj_depth.pt
+      human_activity_classification_rgb: ./external_files/execution_files/model_checkpoints/inlab/best_har_rgb.pth
+      human_activity_classification_depth: ./external_files/execution_files/model_checkpoints/inlab/best_har_depth.pth
+    
+  dynamic_plan_adaptation_settings:
+    inlab:
+      alternative_pools_path: ./external_files/execution_files/dynamic_plan_adaptation/inlab/alternative_pools.json
+      map_from_alternative_path_to_metrics_path: ./external_files/execution_files/dynamic_plan_adaptation/inlab/map_from_alternative_path_to_metrics.json
+      map_from_alternative_path_to_threshold_path: ./external_files/execution_files/dynamic_plan_adaptation/inlab/map_from_alternative_path_to_threshold.json
+
+  cumulative_avg_flops_path: ./external_files/execution_files/output_logs/cumulative_avg_flops.txt
+  flops_cache_path: ./external_files/execution_files/cache_files/flops_cache.json
+
+responding_settings:
+  system_prompt: >-
+    #4 Response Generation Stage: With the tool calling logs, the AI assistant needs to describe the process and inference results.
+  user_prompt: >-
+    Yes. Please first think carefully and directly answer my request based on the inference results. Some of the inferences may not always turn out to be correct and require you to make careful consideration in making decisions. Then please detail the inference results of EACH STEP in your friendly tone. Please filter out information that is not relevant to my request. If there is nothing in the results, please tell me you can't make it.
+  example_prompt: ./external_files/response_files/example_response_results.json
+
+evaluation_settings:
+  command:
+    inlab:
+      commands_path: ./evaluation/command_files/commands_inlab.txt
+
+sensor_settings:
+    microphone_room_1:
+      ip: #
+      username: #
+      password: #
+      start_recording_script_path: #
+      stop_recording_script_path: #
+    
+    rgb_camera_room_2:
+      ip:
+      port:
+
+    rgb_camera_room_3:
+      ip:
+      port:
+
+    depth_camera_room_3:
+      ip:
+      port:

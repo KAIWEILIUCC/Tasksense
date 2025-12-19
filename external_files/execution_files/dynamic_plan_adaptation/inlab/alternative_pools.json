@@ -1,0 +1,75 @@
+[
+    {
+        "1-1": [
+            {
+                "tool_name": "query-video-data-rgb",
+                "id": 0,
+                "dep": [-1],
+                "args": {"text": []}
+            },
+            {
+                "tool_name": "object-detection-rgb",
+                "id": 1,
+                "dep": [0],
+                "args": {"rgb_video": "<GENERATED>-0"}
+            },
+            {
+                "tool_name": "human-activity-classification-rgb",
+                "id": 2,
+                "dep": [1],
+                "args": {"rgb_video": "<GENERATED>-1"}
+            }
+        ],
+        "1-2": [
+            {
+                "tool_name": "query-video-data-depth",
+                "id": 0,
+                "dep": [-1],
+                "args": {"text": []}
+            },
+            {
+                "tool_name": "object-detection-depth",
+                "id": 1,
+                "dep": [0],
+                "args": {"video": "<GENERATED>-0"}
+            },
+            {
+                "tool_name": "human-activity-classification-depth",
+                "id": 2,
+                "dep": [1],
+                "args": {"video": "<GENERATED>-1"}
+            }
+        ]
+    },
+    
+    {
+        "2-1": [
+            {
+                "tool_name": "query-video-data-rgb",
+                "id": 0,
+                "dep": [-1],
+                "args": {"text": []}
+            },
+            {
+                "tool_name": "object-detection-rgb",
+                "id": 1,
+                "dep": [0],
+                "args": {"video": "<GENERATED>-0"}
+            }
+        ],
+        "2-2": [
+            {
+                "tool_name": "query-video-data-depth",
+                "id": 0,
+                "dep": [-1],
+                "args": {"text": []}
+            },
+            {
+                "tool_name": "object-detection-depth",
+                "id": 1,
+                "dep": [0],
+                "args": {"video": "<GENERATED>-0"}
+            }
+        ]
+    }
+]

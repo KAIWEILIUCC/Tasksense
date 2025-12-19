@@ -1,0 +1,10 @@
+[
+    ["initial-input (tool calling id < 0)", "query-video-data-rgb"],
+    ["initial-input (tool calling id < 0)", "query-video-data-depth"],
+    
+    ["query-video-data-rgb", "object-detection-rgb"],
+    ["query-video-data-depth", "object-detection-depth"],
+    
+    ["object-detection-rgb", "human-activity-classification-rgb"],
+    ["object-detection-depth", "human-activity-classification-depth"]
+]

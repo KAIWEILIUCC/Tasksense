@@ -1,0 +1,46 @@
+[
+    {
+        "role": "user",
+        "content": "Were there any instances on November 13th, 2023, where the sudden, explosive sound of a sneeze reverberated through the air?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool for audio modality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "On November 13th, 2023, were there any audible indications of an individual's respiratory passages being partially blocked during their slumber, resulting in a distinctive snoring noise?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool for audio modality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "On November 13th, 2023, did Bob exhibit any signs of an elevated body temperature or a general sense of weariness and exhaustion?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "On November 13th, 2023, did Bob suffer from any discomfort or tenderness in his musculature?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    },
+
+    {
+        "role": "user",
+        "content": "On November 13th, 2023, were there any indications that Bob was suffering from ailments affecting his urinary tract or his breathing apparatus?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool with such functionality.)"
+    }
+]

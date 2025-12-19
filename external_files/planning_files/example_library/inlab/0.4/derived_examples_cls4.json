@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "Were there any instances on November 13th, 2023, where the sudden, explosive sound of a sneeze reverberated through the air?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool for audio modality.)"
+    },
+    {
+        "role": "user",
+        "content": "On November 13th, 2023, were there any audible indications of an individual's respiratory passages being partially blocked during their slumber, resulting in a distinctive snoring noise?"
+    },
+    {
+        "role": "assistant",
+        "content": "[] (There is no tool for audio modality.)"
+    }
+]
