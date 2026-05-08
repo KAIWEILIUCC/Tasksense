@@ -20,6 +20,12 @@ api_settings:
     api_key: #
     region_name: #
 
+  vllm:
+    api_key: "EMPTY"  # 本地 vLLM 不需要真实 key
+    base_url: "http://localhost:8000/v1" # vLLM 的默认本地地址
+    model: "qwen-4b"
+    temperature: 0.7
+
   # cohere api is used for text embedding 
   cohere:
     api_key: #

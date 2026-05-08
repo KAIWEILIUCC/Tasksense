@@ -2,11 +2,11 @@ import os
 
 import yaml
 
-from src.api.llm_apis import send_request
+from src.api.llm_apis import send_request, send_request_vllm_api
 from src.planning.example_library_manager import get_examples
 from src.planning.grammar_rules_manager import get_grammar_rules
 from src.planning.vocabulary_set_manager import get_all_vocabulary_set
-from src.utils import replace_slot
+from src.utils import replace_slot, is_network_good
 
 
 def planning(user_input):
@@ -79,4 +79,10 @@ def planning(user_input):
         "content": user_prompt
     })
     
-    return send_request(messages)
+    print("Testing the network condition...")
+    if is_network_good(timeout=3):
+        print("Network is good. Sending request to the Server API...")
+        return send_request(messages)
+    else:
+        print("Network is poor. Sending request to the local vLLM API...")
+        return send_request_vllm_api(messages)

@@ -256,5 +256,34 @@ def send_request(messages):
         llm_name,
         temperature,
     )
+
+
+from openai import OpenAI
+
+def send_request_vllm_api(
+    messages,
+):
+    config_path = os.environ.get("CONFIG_PATH")
+    with open(config_path, "r", encoding="utf-8") as f:
+        config = yaml.load(f, Loader=yaml.FullLoader)
+        
+    temperature = config["api_settings"]["vllm"]["temperature"]
+    api_key = config["api_settings"]["vllm"]["api_key"]
+    base_url = config["api_settings"]["vllm"]["base_url"]
+    model = config["api_settings"]["vllm"]["model"]
     
+    client = OpenAI(
+        api_key=api_key,
+        base_url=base_url  
+    )
+    
+    completion = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=temperature
+    )
+
+    return completion.choices[0].message.content
+    
+
     

@@ -1083,3 +1083,12 @@ def escape_quotes_after_possible_labels(s):
             result += s[i]
             i +=1
     return result
+
+
+def is_network_good(test_url="https://ark.cn-beijing.volces.com", timeout=1.5):
+    try:
+        response = requests.head(test_url, timeout=timeout)
+        return response.status_code < 500
+    except requests.RequestException:
+        return False
+
